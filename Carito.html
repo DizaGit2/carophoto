@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotógrafa de Books para Artistas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://images.pexels.com/photos/57905/pexels-photo-57905.jpeg?cs=srgb&dl=pexels-jhawley-57905.jpg&fm=jpg'); /* Cambia esta URL por tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .portfolio, .servicios, .contacto {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .portfolio h2, .servicios h2, .contacto h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #4a4a4a;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .servicios-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .servicio {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicio h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #6a1b9a;
+        }
+
+        .contacto form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacto input, .contacto textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contacto button {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/image8-2.jpg" alt="Logo Fotógrafa"> <!-- Cambia esta URL por tu logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Books Profesionales para Artistas</h1>
+            <p>Capturamos tu esencia y talento en cada imagen.</p>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/image8-2.jpg" alt="Gallery 1"> <!-- Cambia estas URLs por tus imágenes -->
+            <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/image8-2.jpg" alt="Gallery 2">
+            <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/image8-2.jpg" alt="Gallery 3">
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <h3>Sesión Fotográfica</h3>
+                <p>Una sesión personalizada para capturar tu estilo único.</p>
+            </div>
+            <div class="servicio">
+                <h3>Edición Profesional</h3>
+                <p>Retoque y edición de alta calidad para resaltar tu imagen.</p>
+            </div>
+            <div class="servicio">
+                <h3>Asesoría de Imagen</h3>
+                <p>Te ayudamos a elegir el mejor look para tu book.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fotógrafa de Books para Artistas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript básico para manejar el envío del formulario
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por tu mensaje. Te contactaremos pronto.');
+            // Aquí podrías añadir código para enviar el formulario a un servidor
+        });
+    </script>
+</body>
+</html>
